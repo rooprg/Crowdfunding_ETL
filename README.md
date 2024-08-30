@@ -136,7 +136,7 @@ The ERD and DataFrames are the only data visualization outputs from this ETL pip
 **(5) Results and Analysis:**
 
 
-The Crowdfunding Database if available for any SQL-related queries that the company wants to use to review and visualize their crowdfunding data
+The Crowdfunding Database is available for any SQL-related queries that the company wants to use to review and visualize their crowdfunding data.
 
 
 **(6) Ethical Considerations:**
