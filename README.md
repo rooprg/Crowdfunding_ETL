@@ -24,87 +24,88 @@ The following steps were undertaken with the dataset to make the information mor
 
 
 **(a) Create the Category and Subcategory DataFrames:**
-(i) Read the "crowdfunding.xlsx" data into a Pandas DataFrame
+     (i) Read the "crowdfunding.xlsx" data into a Pandas DataFrame
 
 
-(ii) Create the Category and Subcategory DataFrames
-     (1) Extract and transform the crowdfunding.xlsx Excel data to create a category DataFrame that has the following columns-
+     (ii) Create the Category and Subcategory DataFrames
+     
+        (1) Extract and transform the crowdfunding.xlsx Excel data to create a category DataFrame that has the following columns-
 
-     (2) A "category_id" column that has entries going sequentially from "cat1" to "catn", where n is the number of unique categories
+        (2) A "category_id" column that has entries going sequentially from "cat1" to "catn", where n is the number of unique categories
 
-     (3) A "category" column that contains only the category titles
-
-
-(iii) Export the category DataFrame as category.csv and save it to your GitHub repository.
+        (3) A "category" column that contains only the category titles
 
 
-(iv) Extract and transform the crowdfunding.xlsx Excel data to create a subcategory DataFrame that has the following columns-
+     (iii) Export the category DataFrame as category.csv and save it to your GitHub repository.
 
-     (i) A "subcategory_id" column that has entries going sequentially from "subcat1" to "subcatn", where n is the number of unique subcategories
 
-     (ii) A "subcategory" column that contains only the subcategory titles
+     (iv) Extract and transform the crowdfunding.xlsx Excel data to create a subcategory DataFrame that has the following columns-
+
+        (i) A "subcategory_id" column that has entries going sequentially from "subcat1" to "subcatn", where n is the number of unique subcategories
+
+        (ii) A "subcategory" column that contains only the subcategory titles
 
      
-(v) Export the subcategory DataFrame as subcategory.csv and save it to your GitHub repository
+     (v) Export the subcategory DataFrame as subcategory.csv and save it to your GitHub repository
 
 
 **(b) Create the Campaign DataFrame:**
 
 
-(i) Extract and transform the crowdfunding.xlsx Excel data to create a campaign DataFrame has the following columns-
+     (i) Extract and transform the crowdfunding.xlsx Excel data to create a campaign DataFrame has the following columns-
 
-     (1)The "cf_id" column
+        (1)The "cf_id" column
 
-     (2) The "contact_id" column
+        (2) The "contact_id" column
 
-     (3) The "company_name" column
+        (3) The "company_name" column
 
-     (4) The "blurb" column, renamed to "description"
+        (4) The "blurb" column, renamed to "description"
 
-     (5) The "goal" column, converted to the float data type
+        (5) The "goal" column, converted to the float data type
 
-     (6) The "pledged" column, converted to the float data type
+        (6) The "pledged" column, converted to the float data type
 
-     (7) The "outcome" column
+        (7) The "outcome" column
 
-     (8) The "backers_count" column
+        (8) The "backers_count" column
 
-     (9) The "country" column
+        (9) The "country" column
 
-     (10)The "currency" column
+        (10) The "currency" column
 
-     (11) The "launched_at" column, renamed to "launch_date" and with the UTC times converted to the datetime format
+        (11) The "launched_at" column, renamed to "launch_date" and with the UTC times converted to the datetime format
 
-     (12)The "deadline" column, renamed to "end_date" and with the UTC times converted to the datetime format
+        (12)The "deadline" column, renamed to "end_date" and with the UTC times converted to the datetime format
 
-     (13) The "category_id" column, with unique identification numbers matching those in the "category_id" column of the category DataFrame
+        (13) The "category_id" column, with unique identification numbers matching those in the "category_id" column of the category DataFrame
 
-     (14) The "subcategory_id" column, with the unique identification numbers matching those in the "subcategory_id" column of the subcategory DataFrame
+        (14) The "subcategory_id" column, with the unique identification numbers matching those in the "subcategory_id" column of the subcategory DataFrame
 
 
-(ii) Export the campaign DataFrame as "campaign.csv" and save it to your GitHub repository
+     (ii) Export the campaign DataFrame as "campaign.csv" and save it to your GitHub repository
 
 
 **(c) Create the Contacts DataFrame:**
 
 
-(i) Use Python dictionary methods for extracting and transforming the data from the contacts.xlsx file-
+     (i) Use Python dictionary methods for extracting and transforming the data from the contacts.xlsx file-
 
-     (1) Import the contacts.xlsx file into a DataFrame
+        (1) Import the contacts.xlsx file into a DataFrame
      
-     (2) Iterate through the DataFrame, converting each row to a dictionary
+        (2) Iterate through the DataFrame, converting each row to a dictionary
 
-     (3) Iterate through each dictionary, doing the following:
+        (3) Iterate through each dictionary, doing the following:
      
-        - Extract the dictionary values from the keys by using a Python list comprehension
+           - Extract the dictionary values from the keys by using a Python list comprehension
         
-        - Add the values for each row to a new list
+           - Add the values for each row to a new list
 
-        - Create a new DataFrame that contains the extracted data
+           - Create a new DataFrame that contains the extracted data
 
-        - Split each "name" column value into a first and last name, and place each in a new column
+           - Split each "name" column value into a first and last name, and place each in a new column
 
-        - Clean and export the DataFrame as "contacts.csv" and save it to your GitHub repository
+           - Clean and export the DataFrame as "contacts.csv" and save it to your GitHub repository
 
 
 **(d) Create the Crowdfunding Database:**
@@ -145,6 +146,7 @@ The initial datasets contain financial and contact information and thus, likely 
 
 
 **(7) Instructions for Interacting with the Project:**
+
 
 (a) Files stored in the **Resources** folder
 
