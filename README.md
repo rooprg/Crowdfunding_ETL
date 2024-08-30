@@ -41,9 +41,9 @@ The following steps were undertaken with the dataset to make the information mor
 
      (iv) Extract and transform the crowdfunding.xlsx Excel data to create a subcategory DataFrame that has the following columns-
 
-        (i) A "subcategory_id" column that has entries going sequentially from "subcat1" to "subcatn", where n is the number of unique subcategories
+        (1) A "subcategory_id" column that has entries going sequentially from "subcat1" to "subcatn", where n is the number of unique subcategories
 
-        (ii) A "subcategory" column that contains only the subcategory titles
+        (2) A "subcategory" column that contains only the subcategory titles
 
      
      (v) Export the subcategory DataFrame as subcategory.csv and save it to your GitHub repository
